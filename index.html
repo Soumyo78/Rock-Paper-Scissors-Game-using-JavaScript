@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock-Paper-Scissors Game</title>
+</head>
+<body id="canvas">
+
+    <div class="main-container">
+        <div id="title-div" class="title-container">Rock, Paper, Scissors</div>
+        <div class="score-container">
+            <div class="player-ai-score-container">
+                <span class="score-text">Your Score: <span id="player-score">0</span></span>
+                <span class="score-text">Match Tied: <span id="tied-score">0</span></span>
+                <span class="score-text">AI Score: <span id="ai-score">0</span></span>
+            </div>
+        </div>
+        <span id="content-span" class="content-container">
+            <div id="left-hand-div">
+                <h1 id="left-title">You</h1>
+                <img id="left-hand-img" class="left-hand" src="Resources/hand-default.png" alt="left-hand-default">
+            </div>
+            <div id="middle-strings-div">
+                <h1 id="play-status">Play Now!</h1>
+            </div>
+            <div id="right-hand-div">
+                <h1 id="right-title">AI</h1>
+                <img id="right-hand-img" class="right-hand" src="Resources/hand-default.png" alt="right-hand-default">
+            </div>
+        </span>
+        <div class="button-container">
+            <input type="image" src="Resources/rock-btn.png" class="btn" id="rock-btn" onclick="onButtonClick(this.id)"/>
+            <input type="image" src="Resources/paper-btn.png" class="btn" id="paper-btn" onclick="onButtonClick(this.id)"/>
+            <input type="image" src="Resources/scissors-btn.png" class="btn" id="scissors-btn" onclick="onButtonClick(this.id)"/>
+        </div>
+        <div class="reset-btn-container">
+            <button id="reset-btn" onclick="resetGame()" disabled>Reset</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

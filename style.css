@@ -1,0 +1,119 @@
+/* hand animation link:  https://www.w3schools.com/code/tryit.asp?filename=GM99Z6L07QLN */
+
+
+#canvas{
+    margin: 0;
+    padding:0;
+}
+
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-basis: 100%;
+    font-size: 30px;
+    font-family: Arial;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: orangered;
+    color: white;
+}
+
+.content-container{
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    background-color: white;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+.right-hand{
+    transform: rotateY(180deg);
+}
+
+.button-container{
+   display: flex;
+   flex-wrap: wrap;
+   flex-basis: 100%;
+   justify-content: space-around;
+   padding: 20px;
+}
+
+.btn{
+    width: 70px;
+    color: white;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 200px 200px 200px 200px;
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 0px 0px;
+    animation: rotate 0.5s;
+}
+
+#reset-btn{
+    background-color: red;
+    color: white;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 200px 200px 200px 200px;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px;
+}
+
+#reset-btn:hover{
+    box-shadow: 0px 0px 0px 0px;
+}
+
+.reset-btn-container{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+@keyframes rotate {
+    0% { transform:rotate(0deg); }
+    50% { transform: rotate(-180deg); }
+    100% { transform: rotate(0); }
+}
+
+.middle-strings-div{
+    display: flex;
+    flex-wrap: wrap;
+    white-space: pre-wrap;
+}
+
+.score-container{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-basis: 100%;
+    font-size: 25px;
+    font-family: Arial;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.player-ai-score-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.score-text{
+    padding-top: 30px;
+}
