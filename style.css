@@ -59,7 +59,7 @@
     animation: rotate 0.5s;
 }
 
-.btn:focus{
+.btn:focus, #reset-btn:focus{
     outline: none;
 }
 
